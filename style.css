@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: hsl(240, 26%, 17%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container form{
+    width: 90%;
+    max-width: 600px;
+    background: hsl(40, 7%, 84%);
+    border-radius: 4px;
+    border: 1px solid black;
+    position: relative;
+    padding: 40px 20px;
+    margin: 20px;
+}
+.container #planeImg{
+    width: 70px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container form label{
+    flex-basis: 30%;
+    font-size: 20px;
+    color: #383838;
+    margin: 20px 10px;
+    border-right: 3px solid #b8b8b8;
+}
+.container form input{
+    flex-basis: 60%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 0;
+    color: #333;
+    border-bottom: 1px solid #383838;
+    font-size: 16px;
+    position: relative;
+}
+.container .input-group span{
+    position: absolute;
+    right: 10px;
+    color: hsl(0, 100%, 42%);
+}
+.container #submitBtn{
+    width: 150px;
+    height: 30px;
+    background: hsl(240, 8%, 31%);
+    color: #e5e5e5;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.25s;
+}
+.container #submitBtn:hover{
+    font-size: 21px;
+    background: hsl(240, 7%, 46%);
+    color: #ffffff;
+}
+.container span img{
+    width: 30px
+}
+.container #mLabel{
+    border: none;
+    position: relative;
+}
+#mLabel::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 70px;
+    background: #b8b8b8;
+    right: -3px;
+    top: -35px;
+}
+.container #messageInput{
+    padding-bottom: 70px;
+    margin-bottom: 20px;;
+}
+.container #messageError{
+    top: 75px;
+}
+.container #submitError{
+    position: static;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+}
